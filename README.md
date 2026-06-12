@@ -25,13 +25,6 @@ Charging sessions are triggered at each EVCS when battery SOC drops below 80%, u
 | `saudi_evcs_distance.csv` | 9 × 9 | Inter-EVCS pairwise distance matrix (km) |
 | `saudi_evcs_adj.csv` | 9 × 9 | K-nearest-neighbour adjacency matrix (K=4) |
 
-## Citation
-
-If you use this dataset, please cite:
-
-```
-[Authors], "A Generalisable RL-MTL-LLM Framework for Intelligent EV Charging
-Station Management," IEEE Access, 2026.
 ```
 
 ## License
