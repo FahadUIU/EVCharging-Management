@@ -25,7 +25,21 @@ Charging sessions are triggered at each EVCS when battery SOC drops below 80%, u
 | `saudi_evcs_distance.csv` | 9 × 9 | Inter-EVCS pairwise distance matrix (km) |
 | `saudi_evcs_adj.csv` | 9 × 9 | K-nearest-neighbour adjacency matrix (K=4) |
 
-```
+## Code
+
+Alongside the dataset, this repository also includes the model pipeline code used to consume it:
+
+- **`data_preprocessing.py`** — Dataset loading and feature engineering (including the Saudi EVCS loader used for this dataset).
+- **`model.py`** — Forecasting model architectures and the reinforcement-learning agent used for charging-zone recommendations.
+- **`evaluation.py`** — Evaluation metrics, result visualization, and the experiment pipeline.
+
+Run the full pipeline with:
+
+\`\`\`bash
+python evaluation.py
+\`\`\`
+
+(Edit the dataset paths at the top of `data_preprocessing.py` to point to your local copy of `saudi_ev_unified.csv`, `saudi_evcs_distance.csv`, and `saudi_evcs_adj.csv` first.)
 
 ## License
 
